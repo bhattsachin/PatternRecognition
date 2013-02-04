@@ -16,16 +16,13 @@ gaussianBoundary.test.__init__|0|/Users/bhatt/git/PatternRecognition/DecisionBou
 4=TwoDimensional
 -- END DICTIONARY
 -- START TREE 1
-4
+2
 gau|1|GaussianBoundary!9@
-myc|0|
-tes|0|
 two|1|TwoDimensional!17@
 -- END TREE
 -- START TREE 2
-4
-!<m|0|
+3
 __i|1|__init__!3&10@
-com|1|computePrior!3&10@
-tes|1|testName!4&18@
+com|3|computePrior!3&10@computeCovariance!3&10@computeMean!3&10@
+tes|2|testCov!4&18@testName!4&18@
 -- END TREE

@@ -1,6 +1,9 @@
-INSTUPgaussianBoundary.test.TwoDimensional
-/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/test/TwoDimensional.py
-INFOS:&&1|1|2|0&&2|3|2|1
-testName=3
-gaussianBoundary.test.TwoDimensional=2
-TwoDimensional=1
+INSTUPgaussianBoundary.src.GaussianBoundary
+/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/src/GaussianBoundary.py
+INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1
+__init__=3
+gaussianBoundary.src.GaussianBoundary=2
+GaussianBoundary=1
+computeCovariance=6
+computeMean=5
+computePrior=4

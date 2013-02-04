@@ -28,6 +28,18 @@ class TwoDimensional(unittest.TestCase):
         print "class2: " + str(priorOfClass2)
         
         pass
+    
+    def testCov(self):
+        class1 = numpy.array( [[0, 0], [0, 1], [2, 2], [3, 1], [3, 2], [3, 3]] )
+        
+        gauss = GaussianBoundary.GaussianBoundary()
+        covClass1 = gauss.computeCovariance(class1, 0, 1)
+        print "class1 covariance : " + str(covClass1)
+        
+        
+        
+        pass
+        
 
 
 if __name__ == "__main__":
