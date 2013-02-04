@@ -1,0 +1,28 @@
+'''
+Created on Feb 3, 2013
+
+@author: bhatt
+'''
+import unittest
+import numpy
+from gaussianBoundary.src import GaussianBoundary
+
+
+
+class TwoDimensional(unittest.TestCase):
+
+
+    def testName(self):
+        
+        data = numpy.zeros((6,2))
+        
+        gauss = GaussianBoundary.GaussianBoundary()
+        print str(data.shape[0])
+        gauss.computePrior(data);
+        
+        pass
+
+
+if __name__ == "__main__":
+    #import sys;sys.argv = ['', 'TwoDimensional.testName']
+    unittest.main()

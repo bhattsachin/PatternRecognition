@@ -1,0 +1,35 @@
+'''
+Created on Feb 3, 2013
+
+@author: bhatt
+'''
+
+import numpy
+
+class GaussianBoundary(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self):
+        '''
+        Constructor
+        '''
+    
+    def computePrior(self, data):
+        ''' Assuming data is not more than 2 dimension
+        '''
+        [nrow, ncol] = data.shape
+        print str(data.shape)
+        print str(nrow)
+        print str(ncol)
+        sum = numpy((1,2))
+        for idx, row in enumerate(data): #all the rows
+            sum=0
+            for idy, col in enumerate(row):
+                sum[0][idy] = sum[0][idy] + data[idx][idy];
+                
+                
+        
+        print "sum:" + str(sum)
