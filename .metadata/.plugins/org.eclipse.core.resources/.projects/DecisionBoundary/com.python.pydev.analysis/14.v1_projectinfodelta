@@ -1,1 +1,9 @@
-DELSTRgaussianBoundary.test.TwoDimensional
+INSTUPgaussianBoundary.test.TwoDimensional
+/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/test/TwoDimensional.py
+INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1
+testCov=4
+testName=3
+testDiscriminant=5
+testDe=6
+gaussianBoundary.test.TwoDimensional=2
+TwoDimensional=1

@@ -33,10 +33,33 @@ class TwoDimensional(unittest.TestCase):
         class1 = numpy.array( [[0, 0], [0, 1], [2, 2], [3, 1], [3, 2], [3, 3]] )
         
         gauss = GaussianBoundary.GaussianBoundary()
-        covClass1 = gauss.computeCovariance(class1, 0, 1)
+        covClass1 = gauss.computeCovariance(class1)
         print "class1 covariance : " + str(covClass1)
         
+        class2 = numpy.array( [[6, 9], [8, 9], [9, 8], [9, 9], [9, 10], [8, 11]] )
+        covClass2 = gauss.computeCovariance(class2)
+        print "class2 covariance : " + str(covClass2)
         
+        
+        pass
+    
+    def testDiscriminant(self):
+        class1 = numpy.array( [[0, 0], [0, 1], [2, 2], [3, 1], [3, 2], [3, 3]] )
+        
+        gauss = GaussianBoundary.GaussianBoundary()
+        gauss.computeDiscriminat(class1)
+        pass
+    
+    def testDecisionBoundary(self):
+        class1 = numpy.array( [[0, 0], [0, 1], [2, 2], [3, 1], [3, 2], [3, 3]] )
+        class2 = numpy.array( [[6, 9], [8, 9], [9, 8], [9, 9], [9, 10], [8, 11]] )
+       
+        
+        gauss = GaussianBoundary.GaussianBoundary()
+        
+        g0 = gauss.computeDecisionBoundary(class1, class2)
+        
+        print "final:" + str(g0)
         
         pass
         

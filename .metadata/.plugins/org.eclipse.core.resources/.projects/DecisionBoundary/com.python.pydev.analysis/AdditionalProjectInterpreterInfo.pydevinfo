@@ -2,27 +2,24 @@
 -- START DISKCACHE
 /Users/bhatt/git/PatternRecognition/.metadata/.plugins/org.eclipse.core.resources/.projects/DecisionBoundary/com.python.pydev.analysis/v1_indexcache
 .v1_indexcache
-gaussianBoundary.src.GaussianBoundary|0|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/src/GaussianBoundary.py
 gaussianBoundary.src.__init__|0|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/src/__init__.py
 gaussianBoundary.__init__|0|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/__init__.py
 gaussianBoundary.test.TwoDimensional|0|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/test/TwoDimensional.py
 gaussianBoundary.test.__init__|0|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/test/__init__.py
 -- END DISKCACHE
 -- START DICTIONARY
-4
-1=gaussianBoundary.src.GaussianBoundary
-3=GaussianBoundary
-2=gaussianBoundary.test.TwoDimensional
-4=TwoDimensional
+2
+1=gaussianBoundary.test.TwoDimensional
+2=TwoDimensional
 -- END DICTIONARY
 -- START TREE 1
 2
-gau|1|GaussianBoundary!9@
-two|1|TwoDimensional!17@
+gau|0|
+two|1|TwoDimensional!9@
 -- END TREE
 -- START TREE 2
 3
-__i|1|__init__!3&10@
-com|3|computePrior!3&10@computeCovariance!3&10@computeMean!3&10@
-tes|2|testCov!4&18@testName!4&18@
+__i|0|
+com|0|
+tes|3|testCov!2&10@testName!2&10@testDiscriminant!2&10@
 -- END TREE
