@@ -1,6 +1,0 @@
-MODULES_MANAGER_V2
-gaussianBoundary.__init__|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/__init__.py
-gaussianBoundary.src.GaussianBoundary|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/src/GaussianBoundary.py
-gaussianBoundary.src.__init__|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/src/__init__.py
-gaussianBoundary.test.TwoDimensional|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/test/TwoDimensional.py
-gaussianBoundary.test.__init__|/Users/bhatt/git/PatternRecognition/DecisionBoundary/gaussianBoundary/test/__init__.py
