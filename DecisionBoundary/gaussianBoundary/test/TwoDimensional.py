@@ -7,6 +7,9 @@ import unittest
 import numpy
 from array import array
 from gaussianBoundary.src import GaussianBoundary
+from pylab import *
+import matplotlib.pyplot as plt
+
 
 
 
@@ -60,6 +63,22 @@ class TwoDimensional(unittest.TestCase):
         g0 = gauss.computeDecisionBoundary(class1, class2)
         
         print "final:" + str(g0)
+        plt.plot(g0)
+        plt.show()
+        
+        
+        pass
+    
+    def testMatplotlib(self):
+        
+        X = numpy.linspace(-numpy.pi, numpy.pi, 256,endpoint=True)
+        C,S = numpy.cos(X), numpy.sin(X)
+        
+        plt.plot(X,C)
+        plt.plot(X,S)
+        
+        #plt.show()
+        
         
         pass
         
