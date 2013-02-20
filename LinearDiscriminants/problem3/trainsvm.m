@@ -45,7 +45,7 @@ for i=1:n
         xj = D(j,1:2);
         yj = D(j,3);
         
-        H(i,j) = <<<FILL IN HERE>>>
+        H(i,j) = yi*yj*kernel_fnc(xi',xj',kernel_args);
         
     end
 end
@@ -75,7 +75,7 @@ x0 = [];
 % problem formulation
 options = optimset('LargeScale','off');
 
-[x,fval] = quadprog(<<<FILL IN HERE>>>)
+[x,fval] = quadprog(H,f,A,b,Aeq,beq,lb,ub,x0,options)
 
 tol = 1e-8;
 

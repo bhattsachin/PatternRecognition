@@ -38,7 +38,7 @@ for y=-100:5:100
         
         v=b;
         for j=1:nSV
-            v = v + <<<FILL IN HERE>>>
+             v = v + alpha(j)*kernel_fnc(xy,SV(j,:)', kernel_args);
         end
         
         if (v < 0)
