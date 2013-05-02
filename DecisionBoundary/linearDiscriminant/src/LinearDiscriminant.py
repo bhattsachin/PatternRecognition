@@ -5,6 +5,8 @@ Created on Feb 14, 2013
 '''
 
 import numpy
+import matplotlib.pyplot as plt
+
 
 class LinearDiscriminant(object):
     '''
@@ -27,11 +29,12 @@ class LinearDiscriminant(object):
         
         fulldata = numpy.concatenate((class1, negate))
         inita = numpy.array( [[0, -0.5, 0.5]])
-        self.batchPerceptron(fulldata, 0.01,inita )
+        w = self.batchPerceptron(fulldata, 0.01,inita )
         
         
         
         print "class1:" + str(fulldata)
+        return w #weight vector
         
     def augment(self, data):
         [nrow, ncol] = data.shape
@@ -66,6 +69,46 @@ class LinearDiscriminant(object):
             
         
         print "gx: " + str(a)
+        return a
+        
+        
+    
+    def plotWVector(self,a,b=None,m=None):
+        ''' In the current axes, plot the weight vector. 
+         
+            a is the weight vector, b is the bias term
+            m is the margin
+        '''
+    
+        # O is some arbitrary point on the line, say where x=0
+        O = numpy.zeros(2) 
+        if b is not None:
+            O[1] = -b/a[1]
+    
+        an = a / numpy.linalg.norm(a)
+        #V = O + 50*an
+        #U = O + -50*an
+    
+        #plt.plot([O[0],U[0]],[O[1],U[1]],'b',linewidth=3.0)
+        #plt.plot([O[0],V[0]],[O[1],V[1]],'r',linewidth=3.0)
+    
+        anr = numpy.asarray([an[1],-an[0]])
+    
+        A = O + 3*anr;
+        B = O + -3*anr;
+        plt.plot([A[0],B[0]],[A[1],B[1]],'k',linewidth=3.0)
+    
+        if m is not None and numpy.isscalar(m):
+            Ob = O - m*an
+            Ab = Ob + 50*anr;
+            Bb = Ob + -50*anr;
+            plt.plot([Ab[0],Bb[0]],[Ab[1],Bb[1]],'k-',linewidth=1.0)
+    
+            Ob = O + m*an
+            Ab = Ob + 50*anr;
+            Bb = Ob + -50*anr;
+            plt.plot([Ab[0],Bb[0]],[Ab[1],Bb[1]],'k-',linewidth=1.0)
+
         
         
         

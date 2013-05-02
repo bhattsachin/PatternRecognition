@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/abstract_classifier.py=utf-8
+encoding//src/adaboost.py=utf-8
+encoding//src/decision_stump.py=utf-8
+encoding//src/test_classifiers.py=utf-8

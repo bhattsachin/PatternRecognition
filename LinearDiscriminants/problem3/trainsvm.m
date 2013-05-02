@@ -49,6 +49,7 @@ for i=1:n
         
     end
 end
+%1 being added to diagonal element
 H = H+1e-10*eye(size(H));  % increases numerical stability of H
 
 % f is just a vector of ones
